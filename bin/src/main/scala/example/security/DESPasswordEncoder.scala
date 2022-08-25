@@ -5,7 +5,7 @@ import javax.xml.bind.DatatypeConverter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 class DESPasswordEncoder()
- extends org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
+ extends org.springframework.security.crypto.scrypt.SCryptPasswordEncoder
  with PasswordEncoder {
 
  val utils: DESUtils = new DESUtils()
